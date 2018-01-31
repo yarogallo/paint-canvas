@@ -1,4 +1,5 @@
 (function() {
+    const buttons = document.getElementsByClassName('button');
     let canvas = document.getElementById('canvas');
     let ctx = canvas.getContext("2d");
     let activeColor = "white";
@@ -16,7 +17,7 @@
 
     function paintCanvas() {
         ctx.fillRect(0, 0, times * 10, times * 10);
-        if (times <= 19) {
+        if (times <= 29) {
             times++;
             window.requestAnimationFrame(paintCanvas)
         } else {
@@ -29,11 +30,10 @@
         evt.target.blur();
     }
 
-    // all buttons
-    const buttons = document.getElementsByClassName('button');
-
-    for (let i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener('click', setColor);
-        buttons[i].addEventListener('focus', quitFocus);
-    }
+    window.addEventListener('load', function() {
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener('click', setColor);
+            buttons[i].addEventListener('focus', quitFocus);
+        }
+    });
 })();
