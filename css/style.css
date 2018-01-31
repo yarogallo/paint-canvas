@@ -1,0 +1,102 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 15px;
+    background-color: gray;
+    border-radius: 5px;
+    border: 2px solid lightslategray;
+    padding: 5px 10px;
+}
+
+button:focus {
+    outline: transparent;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.background-lightgray {
+    background-color: lightgrey;
+}
+
+.text-bigger {
+    font-size: 25px;
+}
+
+.text-red {
+    color: red;
+}
+
+.text-blue {
+    color: blue;
+}
+
+.text-green {
+    color: green;
+}
+
+.text-yellow {
+    color: yellow;
+}
+
+.text-pink {
+    color: pink;
+}
+
+.space-around {
+    margin: 10px;
+}
+
+.space-between {
+    padding: 0 20px;
+}
+
+.row {
+    width: 100%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.end {
+    justify-content: flex-end;
+}
+
+.around {
+    justify-content: space-around;
+}
+
+.float-right {
+    float: right;
+}

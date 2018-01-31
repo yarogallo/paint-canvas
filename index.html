@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My TapView first day</title>
+    <meta name="description" content="Show colors using javascript and html">
+    <meta name="keyboards" content="javascript, html, css">
+    <meta name="author" content="Yanisleidi Rodriguez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="container">
+        <section class="row flex end background-lightgray">
+            <nav class="col-6">
+                <ul class="space-around text-bigger">
+                    <li><a class="text-red" href="https://www.w3schools.com/tags/ref_colornames.asp" target="_blank">COLOR</a></li>
+                    <li class="space-between"><a class="text-blue" href="https://www.w3.org/TR/DOM-Level-1/introduction.html" target="_blank">DOM</a></li>
+                    <li><a class="text-green" href="https://www.w3schools.com/html/html5_new_elements.asp" target="_blank">HTML5</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="row space-around">
+            <header col-12>
+                <h1 class="space-around">Choose one color</h1>
+                <h3>Paint the canvas</h3>
+            </header>
+        </section>
+
+        <section id="buttons-container" class="row">
+            <div class="col-12 flex around">
+                <ul class="float-right">
+                    <li><button type="button" class="button text-blue" name="blue" id="blue">Blue</button></li>
+                    <li><button type="button" class="button text-red" name="red" id="red">Red</button></li>
+                    <li><button type="button" class="button text-green" name="green" id="green">Green</button></li>
+                    <li><button type="button" class="button text-yellow" name="yellow" id="yellow">Yellow</button></li>
+                    <li><button type="button" class="button text-pink" name="pink" id="pink">Pink</button></li>
+                </ul>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-12">
+                <canvas id="canvas" width=" 200 " height="200"></canvas>
+            </div>
+        </section>
+        <footer class="row">
+            <address class="address">
+                posted by: Yanisleidi Rodriguez <br>
+                mail me: <a href="mailto:yrgallo@gmail.com">yrgallo@gmail.com</a> <br>
+                visit us:
+            </address>
+        </footer>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
